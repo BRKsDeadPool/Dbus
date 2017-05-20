@@ -1,0 +1,22 @@
+{
+    "name": "brksdeadpool/dbus",
+    "description": "A data bus for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reginaldo Junior",
+            "email": "reginaldo.junior696@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "^5.4",
+        "michaels/data-manager": "^0.9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "BRKsDeadPool\\DBus\\": "src/"
+        }
+    }
+}
