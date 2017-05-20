@@ -1,13 +1,13 @@
 <?php
 
-namespace BRKsDeadPool\DBus\Facades;
+namespace BRKsDeadPool\Dbus\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use \BRKsDeadPool\DBus\Contracts\DBus as DBusContract;
+use \BRKsDeadPool\Dbus\Contracts\Dbus as DbusContract;
 
-class DBus extends Facade
+class Dbus extends Facade
 {
     public static function getFacadeAccessor() {
-        return DBusContract::class;
+        return DbusContract::class;
     }
 }

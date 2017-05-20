@@ -1,12 +1,12 @@
 <?php
 
-namespace BRKsDeadPool\DBus;
+namespace BRKsDeadPool\Dbus;
 
-use BRKsDeadPool\DBus\Contracts\DBus;
+use BRKsDeadPool\Dbus\Contracts\Dbus;
 use Illuminate\Support\ServiceProvider;
 use Michaels\Manager\Manager;
 
-class DBusServiceProvider extends ServiceProvider
+class DbusServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -17,7 +17,7 @@ class DBusServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(DBus::class, function($app) {
+        $this->app->singleton(Dbus::class, function($app) {
            return new Manager(config('dbus'));
         });
     }

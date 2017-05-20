@@ -1,8 +1,8 @@
 <?php
 
-namespace BRKsDeadPool\DBus\Contracts;
+namespace BRKsDeadPool\Dbus\Contracts;
 
-interface DBus
+interface Dbus
 {
 
 }
